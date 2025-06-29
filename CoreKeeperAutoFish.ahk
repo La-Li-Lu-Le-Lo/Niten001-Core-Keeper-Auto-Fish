@@ -22,7 +22,8 @@ Loop {
     While toggle {
         If (isOpen and handleSubmit) {
             Gui, Submit
-            delay := Floor(12400 * (1 - (baitSkill * 0.05)))
+            delay := Floor(7750 * (1 - (baitSkill * 0.05)))
+            ; MsgBox, % "delay is " . delay
             handleSubmit := 0
             isOpen := 0
         }
